@@ -1,0 +1,2 @@
+json.extract! profile, :id, :first_name, :last_name, :company_name, :domestic_flight, :time_travel, :beatles_or_stones, :big_picture, :color, :born_in_us, :created_at, :updated_at
+json.url profile_url(profile, format: :json)

@@ -1,0 +1,41 @@
+<%= form_for(@profile) do |f| %>
+  <div class="row">
+    <div class="col-xs-12">
+
+      <%= error_explanation @profile %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <%= f.label :first_name, class: 'control-label' %>
+        <%= f.text_field :first_name, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <%= f.label :last_name, class: 'control-label' %>
+        <%= f.text_field :last_name, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <%= f.label :company_name, class: 'control-label' %>
+        <%= f.text_field :company_name, class: 'form-control' %>
+      </div>
+    </div>
+  </div>
+
+  <% Profile::QUESTIONS.each do |k, v| %>
+    <div class="row question_row">
+      <div class="col-xs-6 question">
+        <%= v[:question] %>
+      </div>
+      <div class="col-xs-6 answer">
+        <%= f.select k, v[:answers].invert, {}, class: 'form-control' %>
+      </div>
+    </div>
+  <% end %>
+
+<% end %>

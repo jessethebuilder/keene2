@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @profile.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @profile.last_name %>
+</p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @profile.company_name %>
+</p>
+
+<p>
+  <strong>Domestic flight:</strong>
+  <%= @profile.domestic_flight %>
+</p>
+
+<p>
+  <strong>Time travel:</strong>
+  <%= @profile.time_travel %>
+</p>
+
+<p>
+  <strong>Beatles or stones:</strong>
+  <%= @profile.beatles_or_stones %>
+</p>
+
+<p>
+  <strong>Big picture:</strong>
+  <%= @profile.big_picture %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @profile.color %>
+</p>
+
+<p>
+  <strong>Born in us:</strong>
+  <%= @profile.born_in_us %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
