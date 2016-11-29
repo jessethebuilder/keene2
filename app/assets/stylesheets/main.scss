@@ -1,3 +1,5 @@
+$brand-primary: #0063a7;
+
 //----------- Form -------------
 .question_row{
   margin-top: 20px;
@@ -24,6 +26,13 @@ $input-border-radius: 0px;
   margin-top: 50px;
 }
 
-$brand-primary: #0063a7;
+#notice{
+  text-align: center;
+  background-color: $brand-primary;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 
 @import 'bootstrap';
