@@ -33,7 +33,7 @@
         <%= v[:question] %>
       </div>
       <div class="col-xs-6 answer">
-        <%= f.select k, v[:answers].invert, {}, class: 'form-control' %>
+        <%= f.select k, v[:answers].invert, {:include_blank => true}, class: 'form-control' %>
       </div>
     </div>
   <% end %>
