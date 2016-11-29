@@ -1,0 +1,29 @@
+//----------- Form -------------
+.question_row{
+  margin-top: 20px;
+  .question{
+    font-size: 26px;
+  }
+}
+
+.submit_button{
+  text-align: center;
+  margin-top: 30px;
+}
+
+$input-border-radius: 0px;
+
+//------- Layout --------------
+#top_banner{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#bottom_banner{
+  width: 100%;
+  margin-top: 50px;
+}
+
+$brand-primary: #0063a7;
+
+@import 'bootstrap';

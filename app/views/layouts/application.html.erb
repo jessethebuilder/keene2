@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WhatsYourConstellation</title>
+    <title>What's Your Constellation</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <div class="container-fluid">
+      <%= image_tag 'top_banner.png', id: 'top_banner' %>
+    </div>
+
     <%= yield %>
+
+    <div class="container-fluid">
+      <%= image_tag 'bottom_banner.png', id: 'bottom_banner' %>
+    </div>
   </body>
 </html>
